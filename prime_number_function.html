@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prime_number_function</title>
+</head>
+<body>
+<script>
+    function checkPrimeNumber(num){
+        if(num>=2){
+            for(let i = 2;i<num;i++){
+                if(num%i==0){
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+    for(let i = 2;i<10000;i++){
+        if(checkPrimeNumber(i)){
+            document.write(i + " ");
+        }
+    }
+</script>
+</body>
+</html>
